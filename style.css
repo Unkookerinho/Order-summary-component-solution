@@ -1,0 +1,209 @@
+/* 
+    CSS RESET 
+*/
+
+/* Better box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Delete default margin, padding and font style */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Responsive images etc. */
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Min height on body */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat-x;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/*
+    MAIN
+*/
+main {
+    max-width: 450px;
+
+    margin: auto 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    box-shadow: 8px 8px 56px 0px rgba(160, 162, 185, 1);
+
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.main-image {
+    margin-bottom: 1.7rem;
+}
+
+/*
+    TEXT
+*/
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+
+    color: hsl(223, 47%, 23%);
+
+    margin-bottom: 1rem;
+}
+
+.description {
+    text-align: center;
+
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+
+    color: hsl(224, 23%, 55%);
+
+    margin-bottom: 2rem;
+
+    width: 80%;
+}
+
+
+/* 
+PLAN SECTION 
+*/
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(223, 47%, 23%);
+
+    width: 85%;
+    border-radius: 10px;
+
+    font-weight: 900;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.plan .price {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: hsl(224, 23%, 55%);
+
+}
+
+.plan .plan-price {
+    display: flex;
+    flex-direction: column;
+
+    transform: translateY(4px) translateX(10px);
+}
+
+.plan .image-plan-price {
+    display: flex;
+    flex-direction: row;
+}
+
+.plan .change {
+    cursor: pointer;
+
+    font-size: 0.85rem;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+
+    transition: color 0.3s;
+}
+
+.plan .change:hover {
+    color: hsl(245, 79%, 65%);
+}
+
+/*
+    BUTTONS
+*/
+
+.payment {
+    cursor: pointer;
+
+    border: none;
+    border-radius: 10px;
+
+    width: 85%;
+    padding: 0.9rem;
+
+    background-color: hsl(245, 75%, 52%);
+
+    box-shadow: 12px 12px 39px 0px rgba(173, 175, 214, 1);
+
+    font-weight: 700;
+    font-size: 0.9rem;
+
+    color: white;
+
+    margin-bottom: 1.75rem;
+
+    transition: background-color 0.3s;
+}
+
+.payment:hover {
+    background-color: hsl(245, 79%, 65%);
+}
+
+.cancel {
+    cursor: pointer;
+
+    border: none;
+    background: none;
+
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    color: hsl(224, 23%, 55%);
+
+    margin-bottom: 2.5rem;
+
+    transition: color 0.3s;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+/*
+    FOOTER
+*/
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(224, 23%, 55%);
+}
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
