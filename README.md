@@ -8,5 +8,5 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://www.frontendmentor.io/solutions/order-summary-component-solution-P_upyEV-TL
+- Live Site URL: https://unkookerinho.github.io/Order-summary-component-solution/
